@@ -7,6 +7,7 @@
 $dirname= "server/images/";
 $images = glob($dirname."*.*");
 $i=0;
+echo 'hello';
 foreach($images as $image){
   if(getimagesize($image) === false){
     echo 'file corrupted';
